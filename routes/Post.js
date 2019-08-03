@@ -45,7 +45,7 @@ router.post('/:id/like', (req, res) => {
             post.likes.push(req.user);
             post.save()
                 .then(_post=>{
-                    res.json({"message": "success"})
+                    res.json({"message": "success "})
                 })
         })
 })
